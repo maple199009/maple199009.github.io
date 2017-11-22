@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/unslider.css">
+    <link rel="stylesheet" href="/css//unslider-dots.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0px;
+            height: 2000px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 60px;
+            background-color: #7D99B5;
+            opacity: 0.8;
+            display: flex;
+            top: 80px;
+            z-index: 99;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+        }
+
+        .logo {
+            width: 100%;
+            height: 90px;
+            background-image: url(images.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .list {
+            border-left: 1px solid white;
+            line-height: 60px;
+            flex: 1;
+            text-align: center
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 35px;
+        }
+
+        .img {
+            width: 100%;
+            height: calc(100vh - 140px);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img1 {
+            background-image: url(http://imagscdn.3234.com/attaches/26/11/60539-xm8kiF.jpg)
+        }
+
+        .img2 {
+            background-image: url(http://i.gbc.tw/gb_img/2849220.jpg)
+        }
+
+        .img3 {
+            background-image: url(https://simg314.magcasa.com/content_images/2015/11/16/182181/1447650932_452.jpg)
+        }
+
+        .unslider-arrow {
+            color: white;
+            top: 50vh;
+            opacity: 0.3;
+        }
+
+        :hover.unslider-arrow {
+            transition: 0.5s;
+            opacity: 1;
+        }
+
+        .btn {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <i class="fa fa-chevron-circle-up fa-5x" aria-hidden="true"></i>
+    </div>
+    <div class="logo"></div>
+    <div class="nav">
+        <div class="list">
+            <a href="">如何進入奇幻世界</a>
+        </div>
+        <div class="list">
+            <a href="">探索奇幻世界</a>
+        </div>
+        <div class="list">
+            <a href="">奇幻世界的窗口</a>
+        </div>
+        <div class="list">
+            <a href="">更多奇幻世界</a>
+        </div>
+        <div class="list">
+            <a href="">奇幻世界禁忌</a>
+        </div>
+        <div class="navlogo"></div>
+    </div>
+    <div class="my-slider">
+        <ul>
+            <li>
+                <div class="img img1"></div>
+            </li>
+            <li>
+                <div class="img img2"></div>
+            </li>
+            <li>
+                <div class="img img3"></div>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script>
+        $('.btn').click(function () {
+            $(window).scrollTop(0);
+        });
+
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
+
+            if (top > 500) {
+                $(".btn").show();
+            } else {
+               $(".btn").hide();
+            }
+            if (top > 80) {
+                $(".nav").addClass('fixed');
+            } else {
+                $(".nav").removeClass('fixed');
+            }
+
+        })
+    </script>
+    <script src="/js/unslider-min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.my-slider').unslider({
+                arrows: {
+                    //  Unslider default behaviour
+                    prev: '<a class="unslider-arrow prev"><i class="fa fa-chevron-circle-left fa-5x" aria-hidden="true"></i></a>',
+                    next: '<a class="unslider-arrow next"><i class="fa fa-chevron-circle-right fa-5x" aria-hidden="true"></i></a>',
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

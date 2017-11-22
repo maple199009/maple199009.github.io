@@ -1,0 +1,515 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: 微軟正黑體;
+    margin: 0px;
+
+}
+body{
+    margin:0px;
+    padding:0px;
+    border: 0px;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+}
+a{ 
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #7D99B5;
+    position: fixed;
+    opacity: 0.8;
+}
+.logo{
+    width: 200px;
+    height: 70px;
+    float: left;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    margin: -10px
+}
+.list{
+    float: right;
+    border-left: 1px solid white;
+    line-height: 70px;
+}
+.hr{
+    width: 100px;
+    height: 100px;
+}
+.top1{
+    width:100%;
+    height:600px;
+}
+.topimg{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+input{
+    width: 50%;
+}
+H1{
+    color: white;
+    line-height: 90vh;
+}
+.up{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+h2{
+    color: #242C43;
+}
+h4{
+    color: #242C43;
+}
+h3{
+    color: white;
+    font-size: 40px;
+    line-height: 300px;
+    margin: 0px;
+}
+h5{
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 400px;
+}
+.boxs{
+    width: 65%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+}
+.boxs2{
+    width: 65%;
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+}
+.boxs3{
+    width: 65%;
+    height: 500px;
+    margin: 20px auto;
+    display: flex;
+
+}
+.box{
+    box-shadow: 0px 0px 2px 2px rgb(160, 160, 160);
+    flex: 1;
+    margin: 0px 10px;
+    text-align: center;
+    background-position: center;
+}
+.box:hover  {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0);
+    filter:saturate(2);
+}
+.box2{
+    flex: 2;
+    margin: 0px 10px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(160, 160, 160);
+}
+.box2:hover  {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0);
+    filter:saturate(2);
+}
+.down{
+    width: 100%;
+    height: 100px;
+}
+.btn1{
+    box-shadow: 0 0 1px 1px rgb(156, 156, 156);
+    width:300px;
+    height: 30px;
+    background-color: #eee;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.btn1:hover{
+    transition: 0.5s;
+    transform: scale(1.2)
+}
+.top2{
+    width: 100%;
+    height:230vh;
+}
+.footer1{
+    width: 100%;
+    height: 700px;
+}
+.footer2{
+    width:100%;
+    height:300px; 
+    background-image: url(img/foot.jpg);
+}
+.list:hover a{
+    font-size: 30px;
+    transition: 0.5s;
+}
+.boxfs{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.boxf{
+    margin: 0 20px;
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+}
+@media screen and (max-width:1200px) {
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #7D99B5;
+    position: fixed;
+    opacity: 0.8;
+}
+.navlogo{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-image: url(img/nav.png);
+    float:right;  
+}
+.navlogo:hover{
+    transform: scale(1.5);
+    transition: 0.5s
+}
+
+.logo{
+    width: 200px;
+    height: 70px;
+    float: left;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    margin: -10px
+}
+.list{
+    display: none;
+    float: right;
+    border-left: 1px solid white;
+    line-height: 70px;
+}
+.hr{
+    width: 100px;
+    height: 100px;
+}
+.top1{
+    width:100%;
+    height:600px;
+}
+.topimg{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+H1{
+    color: white;
+    line-height: 90vh;
+}
+.up{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+h2{
+    color: #242C43;
+}
+h4{
+    color: #242C43;
+}
+h3{
+    color: white;
+    font-size: 40px;
+    line-height: 300px;
+    margin: 0px;
+}
+h5{
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 400px;
+}
+.boxs{
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+}
+.boxs2{
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+}
+.boxs3{
+    width: 65%;
+    height: 500px;
+    margin: 20px auto;
+    display: flex;
+
+}
+.box{
+    box-shadow: 0px 0px 2px 2px black;
+    flex: 1;
+    margin: 0px 10px;
+    text-align: center;
+    background-position: center;
+}
+.box:hover  {
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    opacity:1;
+}
+.box2{
+    flex: 2;
+    margin: 0px 10px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px black;
+}
+.box2:hover  {
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    opacity: 1
+}
+.down{
+    width: 100%;
+    height: 100px;
+}
+.btn1{
+    width:300px;
+    height: 30px;
+    background-color: #eee;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.btn1:hover{
+    transform: scale(1.2)
+}
+.top2{
+    width: 100%;
+    height:270vh;
+}
+.footer1{
+    width: 100%;
+    height: 700px;
+}
+.footer2{
+    width:100%;
+    height:300px; 
+    background-image: url(img/foot.jpg);
+}
+.list:hover a{
+    font-size: 30px;
+    transition: 0.5s;
+}
+.boxfs{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.boxf{
+    margin: 0 20px;
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+}
+}
+@media screen and (max-width:576px) {
+    .nav{
+    width: 100%;
+    height: 70px;
+    background-color: #7D99B5;
+    position: fixed;
+    opacity: 0.8;
+}
+.navlogo{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-image: url(img/nav.png);
+    float:right;  
+}
+.navlogo:hover{
+    transform: scale(1.5);
+    transition: 0.5s
+}
+.logo{
+    width: 200px;
+    height: 70px;
+    float: left;
+    background-image: url(img/logo.png);
+    background-size: cover;
+    margin: -10px
+}
+.list{
+    display: none;
+    float: right;
+    border-left: 1px solid white;
+    line-height: 70px;
+}
+.hr{
+    width: 100px;
+    height: 100px;
+}
+.top1{
+    width:100%;
+    height:600px;
+}
+.topimg{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+h1{
+    color: white;
+    line-height: 90vh;
+    font-size: 20px
+}
+.up{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+h2{
+    color: #242C43;
+}
+h4{
+    color: #242C43;
+}
+h3{
+    color: white;
+    font-size: 40px;
+    line-height: 300px;
+    margin: 0px;
+}
+h5{
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 200px;
+}
+.boxs{
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    display: flex;
+}
+.boxs2{
+    width: 100%;
+    height: 30%;
+    margin: 0px 0px;
+    display: block;
+}
+.boxs3{
+    width: 100%;
+    height: 500px;
+    margin: 0px 0px;
+    display: flex;
+
+}
+.box{
+    height: 300px;
+    width: 100%;
+    box-shadow: 0px 0px 2px 2px black;
+    flex: 1;
+    margin: 0px 0px;
+    text-align: center;
+    background-position: center;
+}
+.box:hover  {
+    transform: scale(1.0);
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    filter:saturate(2);
+}
+.box2{
+    height: 300px;
+    width: 100%;
+    flex: none;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px black;
+}
+.box2:hover  {
+    transform: scale(1.0);
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    filter:saturate(2);
+}
+.down{
+    width: 100%;
+    height: 100px;
+}
+.btn1{
+    width:300px;
+    height: 30px;
+    background-color: #eee;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.btn1:hover{
+    transform: scale(1.2)
+}
+.top2{
+    width: 100%;
+    height:auto;
+}
+.footer1{
+    width: 100%;
+    height: 700px;
+}
+.footer2{
+    display: flex;
+    width:100%;
+    height:100%; 
+    background-image: url(img/foot.jpg);
+}
+.list:hover a{
+    font-size: 30px;
+    transition: 0.5s;
+}
+.boxfs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.boxf{
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+}
+
+}

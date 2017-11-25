@@ -1,0 +1,45 @@
+.navbarbox{
+    max-width: 1130px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.titlebox{
+    max-width: 1130px;
+    height: 70px;
+    position: relative;
+    background-color: white;
+    margin: auto;
+}
+.bodybox{
+    max-width: 1130px;
+    height: calc(100vh - 70px);
+    margin: auto;    
+    background-color: white;  
+}
+.bodybox2{
+    max-width: 1130px;
+    height: calc(200vh - 70px);
+    margin: auto;
+    background-color: white;      
+}
+.bodybox3{
+    max-width: 1130px;
+    height: calc(50vh);
+    margin: auto;
+    background-color: white;      
+}
+
+.peoplebox{
+    height: 50%;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.footerbox{
+    margin: auto;    
+    max-width: 1130px;
+    height: 100%;    
+    background-color: #10181F;
+    position: relative;    
+}

@@ -1,0 +1,169 @@
+@media screen and (max-width:576px){
+#pc{display: none}
+#phone{
+    display: block;
+}
+#ex{
+    width: 100%;
+    height: calc(100vh - 50px);
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    animation: ani3 3s 1;
+}
+@keyframes ani3{
+    0%{opacity: 0; }
+    100%{opacity: 1;}
+}
+.navbarbox{
+    max-width: 1130px;
+    height: 100%;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    background-color: #231815;
+}
+
+.navlogo{
+    width: 90px;
+    height: 40px; 
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    background-position: center;
+    background-size: cover;
+    
+}
+#navburger{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/nav.png);
+    background-color: #231815;
+    z-index: 99;
+    position: absolute;
+    right: 15px;
+  }
+  .navburgerfixed{
+    position: fixed;
+    right: 15px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/nav.png);
+    background-color: #231815;
+    z-index: 99;
+    opacity: 0.2;
+    border-radius: 5px;
+  }
+  :hover.navburgerfixed{
+      opacity: 1;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+}
+.titlebox{
+    width:100%;
+}
+.bodybox{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+.bodybox-phone{
+    height: calc(110vh - 70px);
+    background-color: white;
+    width: 100%;
+}
+.poster{
+    width: 95%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: none;
+    margin:auto
+}
+.fixedbox{
+    height: 30vh;
+}
+.peoplebox{
+    height: 25%;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.peopleimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    width: 100%;
+    height:100%;
+ }
+ .bodybox2{
+    max-width: 1130px;
+    height: calc(150vh - 70px);
+    margin: auto;
+    background-color: white;      
+}
+.track{
+    width: auto;
+    height:4%;
+    float: right;
+    margin: 15% 15px 0 0 ;
+    z-index: 99;
+    border-radius: 15px;
+}
+.flying-l{
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.flying-r{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.design-l{
+    width: 100%;
+    height: 50%;
+    background-size: contain;   
+    background-repeat: no-repeat;
+    background-position: center;    
+    margin-left: auto;
+    margin-right: auto;
+}
+.design-r{
+    width: 100%;
+    height: 50%;
+    background-size: contain;   
+    background-repeat: no-repeat;
+    background-position:center;    
+    margin-left: auto;
+    margin-right: auto;   
+}
+.bodybox3{
+    max-width: 1130px;
+    height: calc(100vh - 70px);
+    margin: auto;
+    background-color: white;     
+    display: block; 
+}
+.moneybox{
+    height: 32%;
+    border: 0px solid black;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}

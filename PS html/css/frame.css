@@ -25,9 +25,10 @@
 }
 .bodybox3{
     max-width: 1130px;
-    height: calc(50vh);
+    height: calc(100vh - 70px);
     margin: auto;
-    background-color: white;      
+    background-color: white;     
+    display: flex; 
 }
 
 .peoplebox{
@@ -35,6 +36,13 @@
     width: 25%;
     float: left;
     position: relative;
+}
+.moneybox{
+    flex: 1;
+    height: 100%;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
 }
 .footerbox{
     margin: auto;    

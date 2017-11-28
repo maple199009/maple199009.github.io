@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOS - Animate on scroll library</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <style>
+    body {
+      background-attachment: fixed;
+      font-family: 微軟正黑體;
+      background-image: url(bg.jpg);
+      background-size: cover;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+
+    }
+
+    .img {
+      width: 200px;
+      height: 200px;
+      background-size: contain;
+      background-position: center;
+      margin: auto;
+      margin-top: 5%;
+      background-color: #eee;
+      background-repeat: no-repeat;
+    }
+
+    .titlebox {
+      max-width: 1130px;
+      height: 70px;
+      position: relative;
+      margin: auto;
+    }
+
+    .title {
+      width: 200px;
+      height: 40px;
+      background-color: #E25E5A;
+      position: absolute;
+      top: 25%;
+      left: -5%;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      z-index: 99;
+    }
+
+    .titleword {
+      margin: 0;
+      line-height: 40px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="transcroller-body" class="aos-all">
+    <div id="label1_" class="titlebox">
+      <div class="title" data-aos="fade-right">
+        <p class="titleword">自我介紹</p>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner">
+        <a href="bigimg/1.jpg" data-lightbox="image-1" data-title="自我介紹">
+          <div class="img" style="background-image:url(img/1.jpg)"></div>
+          <p class="word">鄭為楓</p>
+        </a>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="label1_" class="titlebox">
+        <div class="title" data-aos="fade-right">
+          <p class="titleword">Ai繪圖</p>
+        </div>
+      </div>
+    <div class="aos-item" data-aos="fade-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/2.jpg" data-lightbox="image-1" data-title="網格工具 口紅">
+            <div class="img" style="background-image:url(img/2.jpg)"></div>
+            <p class="word">口紅</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/3.jpg" data-lightbox="image-1" data-title="logo設計">
+            <div class="img" style="background-image:url(img/3.jpg)"></div>
+            <p class="word">LOGO設計</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="flip-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/4.jpg" data-lightbox="image-1" data-title="網格工具 素描">
+            <div class="img" style="background-image:url(img/4.jpg)"></div>
+            <p class="word">素描</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="flip-up">
+      <div class="aos-item__inner">
+          <a href="bigimg/5.jpg" data-lightbox="image-1" data-title="網格工具 蝴蝶">
+            <div class="img" style="background-image:url(img/5.jpg)"></div>
+            <p class="word">蝴蝶</p>
+          </a>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="label1_" class="titlebox">
+        <div class="title" data-aos="fade-right">
+          <p class="titleword">PS特效合成</p>
+        </div>
+      </div>
+    <div class="aos-item" data-aos="fade-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/6.jpg" data-lightbox="image-1" data-title="貓咪拯救世界">
+            <div class="img" style="background-image:url(img/6.jpg)"></div>
+            <p class="word">蘋果合成</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+          <a href="bigimg/7.jpg" data-lightbox="image-1" data-title="特效合成">
+            <div class="img" style="background-image:url(img/7.jpg)"></div>
+            <p class="word">開天闢地</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/8.jpg" data-lightbox="image-1" data-title="汽車廣告">
+            <div class="img" style="background-image:url(img/8.jpg)"></div>
+            <p class="word">汽車廣告</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+          <a href="bigimg/9.jpg" data-lightbox="image-1" data-title="雪景合成">
+            <div class="img" style="background-image:url(img/9.jpg)"></div>
+            <p class="word">雪景合成</p>
+          </a>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="label1_" class="titlebox">
+        <div class="title" data-aos="fade-right">
+          <p class="titleword">名片設計</p>
+        </div>
+      </div>
+    <div class="aos-item" data-aos="fade-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/10.jpg" data-lightbox="image-1" data-title="名片設計">
+            <div class="img" style="background-image:url(img/10.jpg)"></div>
+            <p class="word">太平洋補習班名片設計</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner">
+          <a href="bigimg/11.jpg" data-lightbox="image-1" data-title="名片設計">
+            <div class="img" style="background-image:url(img/11.jpg)"></div>
+            <p class="word">美髮設計師名片設計</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/12.jpg" data-lightbox="image-1" data-title="名片設計">
+            <div class="img" style="background-image:url(img/12.jpg)"></div>
+            <p class="word">鑽石業務專員名片設計</p>
+          </a>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="label1_" class="titlebox">
+        <div class="title" data-aos="fade-right">
+          <p class="titleword">海報設計</p>
+        </div>
+      </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+          <a href="bigimg/13.jpg" data-lightbox="image-1" data-title="月亮">
+            <div class="img" style="background-image:url(img/13.jpg)"></div>
+            <p class="word">逢甲國樂社成果發表海報</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner">
+          <a href="bigimg/14.jpg" data-lightbox="image-1" data-title="彩潑">
+            <div class="img" style="background-image:url(img/14.jpg)"></div>
+            <p class="word">逢甲國樂社成果發表海報</p>
+          </a>
+      </div>
+    </div><div class="aos-item" data-aos="fade-up">
+        <div class="aos-item__inner">
+            <a href="bigimg/18.jpg" data-lightbox="image-1" data-title="日新大戲院">
+              <div class="img" style="background-image:url(img/18.jpg)"></div>
+              <p class="word">網站設計專題海報</p>
+            </a>
+        </div>
+      </div>
+    <div style="clear:both"></div>
+    <div id="label1_" class="titlebox">
+        <div class="title" data-aos="fade-right">
+          <p class="titleword">產品設計</p>
+        </div>
+      </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+          <a href="bigimg/15.jpg" data-lightbox="image-1" data-title="紙袋合成">
+            <div class="img" style="background-image:url(img/15.jpg)"></div>
+            <p class="word">客家風包裝紙袋</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner">
+          <a href="bigimg/16.jpg" data-lightbox="image-1" data-title="茶罐">
+            <div class="img" style="background-image:url(img/16.jpg)"></div>
+            <p class="word">茶罐包裝設計</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-down">
+      <div class="aos-item__inner">
+          <a href="bigimg/17.jpg" data-lightbox="image-1" data-title="逢甲雅風國樂社團服">
+            <div class="img" style="background-image:url(img/17.jpg)"></div>
+            <p class="word">社團服裝設計</p>
+          </a>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="label1_" class="titlebox">
+        <div class="title" data-aos="fade-right">
+          <p class="titleword">個人網頁設計
+          </p>
+        </div>
+      </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner">
+          <a href="bigimg/17.jpg" data-lightbox="image-1" data-title="逢甲雅風國樂社團服">
+            <div class="img" style="background-image:url(img/17.jpg)"></div>
+            <p class="word">社團服裝設計</p>
+          </a>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out">
+      <div class="aos-item__inner">
+        <h3>19</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner">
+        <h3>20</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out">
+      <div class="aos-item__inner">
+        <h3>21</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>22</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out-up">
+      <div class="aos-item__inner">
+        <h3>23</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="zoom-out-down">
+      <div class="aos-item__inner">
+        <h3>24</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>25</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>26</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>27</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>28</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>29</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>30</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>31</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>32</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>33</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>34</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>35</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>36</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>37</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>38</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>39</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>40</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>41</h3>
+      </div>
+    </div>
+    <div class="aos-item" data-aos="fade-in">
+      <div class="aos-item__inner">
+        <h3>42</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/aos.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+  </script>
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+    <script>
+      requirejs.config({
+          baseUrl: '../dist',
+      });
+
+      require(['aos'], function(AOS){
+          AOS.init({
+              easing: 'ease-in-out-sine'
+          });
+      });
+    </script> -->
+</body>
+
+</html>

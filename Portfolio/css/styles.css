@@ -1,0 +1,41 @@
+body {
+  font-family: 微軟正黑體,Helvetica,Tahoma;
+  font-weight: bold;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.aos-all {
+  width: 1000px;
+  max-width: 98%;
+  margin: 10vh auto 0 auto;
+}
+
+.aos-item {
+  display: inline-block;
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  padding: 20px;
+  
+}
+
+.aos-item__inner {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  float: left;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .aos-item {
+    width: 50%;
+  }
+}

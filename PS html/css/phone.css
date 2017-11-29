@@ -88,8 +88,8 @@
     margin:auto
 }
 .fixedbox{
-    position: r;
-    height: 30vh;
+    position: relative;
+    height: 50px;
 }
 .peoplebox{
     height: 25%;

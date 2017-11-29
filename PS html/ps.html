@@ -17,6 +17,10 @@
 
 
     <style>
+        html {
+            overflow-x: hidden;
+        }
+
         body {
             margin: 0;
             box-sizing: border-box;
@@ -30,199 +34,40 @@
         #phone {
             display: none;
         }
+
+        .navbar {
+            z-index: 999;
+        }
+
+        .navlist {
+            font-size: 20px;
+        }
+
+        .peoplebox {
+            width: 100%;
+            height: 100%;
+        }
+
+        .people {
+            width: 100%;
+            display: inline-block;
+            height: 100%;
+            background-size: 400px;
+            background-position: center;
+
+        }
+
+        a {
+            font-size: 15px;
+        }
+
+      
     </style>
     <link rel="stylesheet" href="css/phone.css">
 
 </head>
 
 <body>
-    <div id="pc">
-        <div id="ex" style="background-image:url(img/index-pc.jpg)"></div>
-        <div class="navbar">
-            <div class="navbarbox">
-                <div class="navlogo" style="background-image: url(img/logo.png)"></div>
-                <div class="navlist">
-                    <ul>
-                        <li>
-                            <a id="label1" href="#label1_">演出資訊</a>
-                        </li>
-                        <li>
-                            <a id="label2" href="#label2_">團員介紹</a>
-                        </li>
-                        <li>
-                            <a id="label3" href="#label3_">曲目介紹</a>
-                        </li>
-                        <li>
-                            <a id="label4" href="#label4_">購票與贊助</a>
-                        </li>
-                        <li>
-                            <a id="label5" href="#label5_">贊助商品設計</a>
-                        </li>
-                        <li>
-                            <a id="label6" href="#label6_">贊助廠商</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <a href="#ex" id="back-to-top" class="topbtn" style="font-size:20px; position: fixed; bottom:15px;right:15px">
-            回到最上
-        </a>
-        <a href="https://goo.gl/pySgXM" class="btnticket" style="font-size:20px; position: fixed; bottom:70px;right:15px">
-            售票連結
-        </a>
-        <div class="container">
-            <div id="label1_" class="titlebox">
-                <div class="title" data-aos="fade-right">
-                    <p class="titleword">演出資訊</p>
-                </div>
-            </div>
-            <div class="bodybox">
-
-                
-                <div data-aos="fade-left" class="poster" style="background-image:url(img/poster.jpg);margin:auto;"></div>
-            </div>
-
-        </div>
-        <div class="fixedbox" style="background-image:url(img/fixed1.jpg)"></div>
-        
-        <div class="container">
-            <div id=label2_ class="titlebox">
-                <div class="title" data-aos="fade-right">
-                    <p class="titleword">團員介紹</p>
-                </div>
-            </div>
-            <div class="bodybox">
-                <div data-aos="flip-down" data-aos-delay="100" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="總召 鄭為楓">
-                        <img src="img/people1.png" alt="">
-                    </a>
-                </div>
-                <div data-aos="flip-down" data-aos-delay="300" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople2.jpg" data-lightbox="image-1" data-title="執行 王鐿潔">
-                        <img src="img/people2.png" alt="">
-                    </a>
-                </div>
-                <div data-aos="flip-down" data-aos-delay="500" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople3.jpg" data-lightbox="image-1" data-title="樂管 闕壯凱">
-                        <img src="img/people3.png" alt="">
-                    </a>
-                </div>
-                <div data-aos="flip-down" data-aos-delay="700" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople4.jpg" data-lightbox="image-1" data-title="譜務 莊栩然">
-                        <img src="img/people4.png" alt="">
-                    </a>
-                </div>
-                <div data-aos="flip-down" data-aos-delay="100" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色1">
-                        <img src="img/people5.png" alt="">
-                    </a>
-                </div>
-                <div data-aos="flip-down" data-aos-delay="300" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色2">
-                        <img src="img/people6.png" alt="">
-                    </a>
-                </div>
-                <div data-aos="flip-down" data-aos-delay="500" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色3">
-                        <img src="img/people7.png" alt="">
-                    </a>
-                </div>
-                <div data-aos="flip-down" data-aos-delay="700" class="peoplebox">
-                    <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色4">
-                        <img src="img/people8.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="fixedbox" style="background-image:url(img/fixed2.jpg)"></div>
-        <div class="container2">
-            <div id="label3_" class="titlebox">
-                <div class="title" data-aos="fade-right">
-                    <p class="titleword">曲目介紹</p>
-                </div>
-            </div>
-            <div class="bodybox2">
-                <a href="https://youtu.be/LuuG4aPdlfI" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="100" class="track" src="img/track-01.png" alt="">
-                </a>
-                <a href="https://youtu.be/293cyF2ow08" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="300" class="track" src="img/track-02.png" alt="">
-                </a>
-                <a href="https://youtu.be/CTHgFHI6uIM" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="500" class="track" src="img/track-03.png" alt="">
-                </a>
-                <a href="https://youtu.be/BXu__jhB82w" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="700" class="track" src="img/track-04.png" alt="">
-                </a>
-                <a href="https://youtu.be/WxkQ9jCs1KQ" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="900" class="track" src="img/track-05.png" alt="">
-                </a>
-                <a href="https://youtu.be/Ptxz5i3kHx4" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="1100" class="track" src="img/track-06.png" alt="">
-                </a>
-                <a href="https://youtu.be/iWACzIbP-xE" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="1300" class="track" src="img/track-07.png" alt="">
-                </a>
-                <a href="https://youtu.be/yvMRpN1wUNo" target="_blank">
-                    <img data-aos="fade-left" data-aos-delay="1500" class="track" src="img/track-08.png" alt="">
-                </a>
-                <a href="https://goo.gl/pySgXM" data-aos="fade-left" data-aos-delay="1700" class="btnticket" style="clear: both; font-size:40px; float: right;margin: 2.5% 10% 0 0 ;">兩廳院售票連結</a>
-            </div>
-
-
-        </div>
-
-        <div class="fixedbox" style="background-image:url(img/fixed3.jpg)"></div>
-
-
-        <div class="container">
-            <div id=label4_ class="titlebox">
-                <div class="title" data-aos="fade-right">
-                    <p class="titleword">購票與贊助</p>
-                </div>
-            </div>
-            <div class="bodybox">
-                <div data-aos="fade-right" class="flying-l" style="background-image: url(img/flying-l.png);"></div>
-                <div data-aos="fade-left" class="flying-r" style="background-image: url(img/flying-r.png);"></div>
-
-            </div>
-
-        </div>
-        <div class="container">
-            <div id="label5_" class="titlebox">
-                <div class="title" data-aos="fade-right">
-                    <p class="titleword">贊助商品設計</p>
-                </div>
-            </div>
-            <div class="bodybox">
-                <div data-aos="fade-right" class="design-l" style="background-image:url(img/design.png)"></div>
-                <div data-aos="fade-left" class="design-r" style="background-image:url(img/design.png)"></div>
-            </div>
-        </div>
-
-
-        <div class="fixedbox" style="background-image:url(img/fixed4.jpg)"></div>
-        <div class="container1-2">
-            <div id="label6_" class="titlebox">
-                <div class="title" data-aos="fade-right">
-                    <p class="titleword">贊助廠商</p>
-                </div>
-                <div class="bodybox3">
-                    <div class="moneybox" style="background-image:url(img/money1.jpg)"></div>
-                    <div class="moneybox" style="background-image:url(img/money2.png)"></div>
-                    <div class="moneybox" style="background-image:url(img/money3.jpg)"></div>
-                </div>
-            </div>
-        </div>
-        <div class="fixedbox" style="background-image:url(img/fixed5.jpg)"></div>
-        <div class="footer">
-            <div class="footerbox">
-                <div class="navlogobtm" id="back-to-top" style="background-image:url(img/logo.png)"></div>
-            </div>
-        </div>
-    </div>
-
     <div id="phone">
         <div id="ex" style="background-image:url(img/index-pc.jpg)"></div>
         <div class="navbar">
@@ -271,42 +116,42 @@
         <div class="bodybox-phone">
             <div data-aos="fade-up" data-aos-delay="100" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="總召 鄭為楓">
-                    <img src="img/people1.png" alt="">
+                    <div class="people" style="background-image:url(img/people1.png)"></div>
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="300" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople2.jpg" data-lightbox="image-1" data-title="執行 王鐿潔">
-                    <img src="img/people2.png" alt="">
+                    <div class="people" style="background-image:url(img/people2.png)"></div>
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="500" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople3.jpg" data-lightbox="image-1" data-title="樂管 闕壯凱">
-                    <img src="img/people3.png" alt="">
+                    <div class="people" style="background-image:url(img/people3.png)"></div>
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="700" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople4.jpg" data-lightbox="image-1" data-title="譜務 莊栩然">
-                    <img src="img/people4.png" alt="">
+                    <div class="people" style="background-image:url(img/people4.png)"></div>
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="100" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色1">
-                    <img src="img/people5.png" alt="">
+                    <div class="people" style="background-image:url(img/people5.png)"></div>
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="300" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色2">
-                    <img src="img/people6.png" alt="">
+                    <div class="people" style="background-image:url(img/people5.png)"></div>
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="500" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色3">
-                    <img src="img/people7.png" alt="">
+                    <div class="people" style="background-image:url(img/people5.png)"></div>
                 </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="700" class="peoplebox">
                 <a class="peopleimg" href="img/bigpeople1.jpg" data-lightbox="image-1" data-title="隱藏角色4">
-                    <img src="img/people8.png" alt="">
+                    <div class="people" style="background-image:url(img/people5.png)"></div>
                 </a>
             </div>
         </div>
@@ -328,6 +173,7 @@
             <a href="https://youtu.be/CTHgFHI6uIM" target="_blank">
                 <img data-aos="fade-left" data-aos-delay="500" class="track" src="img/track-03.png" alt="">
             </a>
+            <div style="clear:both"></div>
             <a href="https://youtu.be/BXu__jhB82w" target="_blank">
                 <img data-aos="fade-left" data-aos-delay="700" class="track" src="img/track-04.png" alt="">
             </a>
@@ -349,15 +195,15 @@
         <div class="fixedbox" style="background-image:url(img/fixed3.jpg)"></div>
 
         <div id=label4_ class="titlebox">
-                <div class="title" data-aos="fade-right">
-                    <p class="titleword">購票與贊助</p>
-                </div>
+            <div class="title" data-aos="fade-right">
+                <p class="titleword">購票與贊助</p>
             </div>
-            <div class="bodybox">
-                <div data-aos="fade-right" class="flying-l" style="background-image: url(img/flying-l.png);"></div>
-                <div data-aos="fade-left" class="flying-r" style="background-image: url(img/flying-r.png);"></div>
+        </div>
+        <div class="bodybox">
+            <div data-aos="fade-right" class="flying-l" style="background-image: url(img/flying-l.png);"></div>
+            <div data-aos="fade-left" class="flying-r" style="background-image: url(img/flying-r.png);"></div>
 
-            </div>
+        </div>
 
         <div class="container">
             <div id="label5_" class="titlebox">
@@ -391,7 +237,7 @@
                 <div class="navlogobtm" id="back-to-top" style="background-image:url(img/logo.png)"></div>
             </div>
         </div>
-       </div>
+    </div>
 
 
 
@@ -486,7 +332,7 @@
             }, 700);
         });
 
-        
+
     </script>
 
 

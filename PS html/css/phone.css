@@ -1,4 +1,4 @@
-@media screen and (max-width:576px){
+@media screen and (max-width:1130px){
 #pc{display: none}
 #phone{
     display: block;

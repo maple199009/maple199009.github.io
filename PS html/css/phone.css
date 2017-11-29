@@ -88,6 +88,7 @@
     margin:auto
 }
 .fixedbox{
+    position: r;
     height: 30vh;
 }
 .peoplebox{

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>擊樂物語</title>
+
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/structure.css">
     <link rel="stylesheet" href="css/frame.css">
@@ -13,10 +14,14 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    
 
 
 
     <style>
+        html{
+            overflow-x: hidden;
+        }
         body {
             margin: 0;
             box-sizing: border-box;
@@ -24,6 +29,7 @@
             background-attachment: fixed;
             background-size: cover;
             font-family: "微軟正黑體";
+            overflow-x: hidden;
         }
 
         #phone {
@@ -31,6 +37,7 @@
         }
         
     </style>
+    <link rel="stylesheet" href="css/ipad.css">
     <link rel="stylesheet" href="css/phone.css">
 
 </head>
@@ -53,10 +60,10 @@
                             <a id="label3" href="#label3_">曲目介紹</a>
                         </li>
                         <li>
-                            <a id="label4" href="#label4_">購票與贊助</a>
+                            <a id="label4" href="#label4_">購票贊助</a>
                         </li>
                         <li>
-                            <a id="label5" href="#label5_">贊助商品設計</a>
+                            <a id="label5" href="#label5_">贊助商品</a>
                         </li>
                         <li>
                             <a id="label6" href="#label6_">贊助廠商</a>
@@ -180,6 +187,7 @@
                 <a href="https://youtu.be/CTHgFHI6uIM" target="_blank">
                     <img data-aos="fade-left" data-aos-delay="500" class="track" src="img/track-03.png" alt="">
                 </a>
+                <div style="clear:both"></div>
                 <a href="https://youtu.be/BXu__jhB82w" target="_blank">
                     <img data-aos="fade-left" data-aos-delay="700" class="track" src="img/track-04.png" alt="">
                 </a>
@@ -250,6 +258,14 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+    <!-- 手機板 手機板 手機板 手機板 手機板 手機板 手機板 手機板 手機板 -->
 
     <div id="phone">
         <div id="ex" style="background-image:url(img/index-pc.jpg)"></div>
@@ -446,7 +462,7 @@
             if (top > 500) {
                 $(".navlogo").hide();
             } else {
-                $("..navlogo").show();
+                $(".navlogo").show();
             }
             if (top > 500) {
                 $(".navburgerfixed").show();

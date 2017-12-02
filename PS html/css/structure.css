@@ -1,7 +1,7 @@
 
 #ex{
     background-color: #eee;
-    max-width: 1130px;
+    width: 1130px;
     height: calc(100vh - 70px);
     margin: auto;
     background-size: cover;

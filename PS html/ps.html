@@ -24,12 +24,12 @@
             background-attachment: fixed;
             background-size: cover;
             font-family: "微軟正黑體";
-            overflow-x: hidden;
         }
 
         #phone {
             display: none;
         }
+        
     </style>
     <link rel="stylesheet" href="css/phone.css">
 
@@ -401,9 +401,10 @@
 
 
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+
     <script src="js/aos.js"></script>
-    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js//lightbox.min.js"></script>
     <script src="js/swiper.min.js"></script>
 
     <script>
@@ -424,37 +425,37 @@
                 loop: true
             })
         });
-        // $(window).scroll(function () {
-        //     var top = $(window).scrollTop();
+        $(window).scroll(function () {
+            var top = $(window).scrollTop();
 
-        //     if (top > 500) {
-        //         $(".btnticket").show();
-        //     } else {
-        //         $(".btnticket").hide();
-        //     }
-        //     if (top > 500) {
-        //         $(".topbtn").show();
-        //     } else {
-        //         $(".topbtn").hide();
-        //     }
-        //     if (top > 500) {
-        //         $(".navbar").addClass('fixed');
-        //     } else {
-        //         $(".navbar").removeClass('fixed');
-        //     }
-        //     if (top > 500) {
-        //         $(".navlogo").hide();
-        //     } else {
-        //         $("..navlogo").show();
-        //     }
-        //     if (top > 500) {
-        //         $(".navburgerfixed").show();
-        //     } else {
-        //         $(".navburgerfixed").hide();
-        //     }
+            if (top > 500) {
+                $(".btnticket").show();
+            } else {
+                $(".btnticket").hide();
+            }
+            if (top > 500) {
+                $(".topbtn").show();
+            } else {
+                $(".topbtn").hide();
+            }
+            if (top > 500) {
+                $(".navbar").addClass('fixed');
+            } else {
+                $(".navbar").removeClass('fixed');
+            }
+            if (top > 500) {
+                $(".navlogo").hide();
+            } else {
+                $("..navlogo").show();
+            }
+            if (top > 500) {
+                $(".navburgerfixed").show();
+            } else {
+                $(".navburgerfixed").hide();
+            }
 
 
-        // })
+        })
         $('#back-to-top').on('click', function (e) {
             e.preventDefault();
             $('html,body').animate({

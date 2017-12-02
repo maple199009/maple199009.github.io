@@ -1,0 +1,142 @@
+.title{
+    width: 200px;
+    height: 40px;
+    background-color: #E25E5A;
+    position: absolute;
+    top: 25%;
+    left: -5%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 99;
+}
+.titleword{
+    margin: 0;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+}
+.posterword{
+    width: 40%;
+    height: 95%;
+    position: relative;
+    margin-left: 10%;
+    float: left;
+}
+.poster{
+    width: 40%;
+    height: 95%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: 10%;
+}
+.btnticket{
+    border-radius: 30px;
+    font-family: 微軟正黑體;
+    font-weight:bold;
+    color: white;
+    background-color: #4E260D;
+    padding: 10px 15px;
+    text-decoration:none;
+    border: 2px solid white;
+    box-shadow: 0 0 1px 2px  rgba(119, 119, 119, 0.2);
+    z-index: 99;
+}
+.btnticket:hover {
+    animation: ani1 2s 1 ;
+}
+.topbtn{
+    border-radius: 30px;
+    font-family: 微軟正黑體;
+    font-weight:bold;
+    color: white;
+    background-color: #4E260D;
+    padding: 10px 15px;
+    text-decoration:none;
+    border: 2px solid white;
+    box-shadow: 0 0 1px 2px  rgba(119, 119, 119, 0.2);
+    z-index: 99;
+}
+.topbtn:hover {
+    animation: ani1 2s 1 ;
+}
+.peopleimg{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 90;
+   height: 70%
+}
+.peopleimg:hover{
+    animation: ani1 2s 1 ;    
+}
+.track{
+    width: auto;
+    height:8%;
+    float: right;
+    margin: 2.5% 10% 0 0 ;
+    z-index: 99;
+    border-radius: 15px;
+}
+.track:hover{
+    animation: ani2 2s 1;
+}
+
+
+.flying-l{
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-left: 7%;
+}
+.flying-r{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.design-l{
+    width: 50%;
+    height: 100%;
+    background-size: contain;   
+    background-repeat: no-repeat;
+    background-position: right;    
+    float: left;
+}
+.design-r{
+    width: 50%;
+    height: 100%;
+    background-size: contain;   
+    background-repeat: no-repeat;
+    background-position:left;    
+    float: left;    
+}
+.nopeople{
+    margin: 0px;
+    text-align: center;
+}
+
+@keyframes ani1{
+    0%{
+        box-shadow: 0 0 0px 0px rgb(124, 124, 124);
+    }
+    100%{
+        box-shadow: 0 0 300px 0px rgb(255, 255, 255);         
+    }
+}
+@keyframes ani2{
+    0%{
+        box-shadow: 0 0 1px 1px rgb(94, 94, 94);
+    }
+    50%{
+        box-shadow: 0 0 100px 2000x rgb(88, 88, 88); 
+    }
+    100%{
+        box-shadow: 0 0 500px 0px rgb(255, 255, 255);         
+    }
+}

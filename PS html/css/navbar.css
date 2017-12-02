@@ -1,0 +1,55 @@
+.burger {
+    width: 50px;
+    height: 50px;
+}
+
+.b1 {
+    width: 90%;
+    height: 5px;
+    background-color: rgb(182, 182, 182);
+    margin: 10px auto;
+}
+
+.b2 {
+    width: 90%;
+    height: 5px;
+    background-color: rgb(182, 182, 182);
+    margin: 5px auto;
+}
+
+.b3 {
+    width: 90%;
+    height: 5px;
+    background-color: rgb(182, 182, 182);
+    margin: 10px auto;
+}
+
+.body {
+    position: fixed;
+    transition: all 1s ease-out;
+    height: 0;
+    opacity: 0;
+    width: 300px;
+    background-color: black;
+    z-index: 99;
+    
+}
+
+.test {
+    height: 50px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.test1 {
+    opacity: 0.5;
+    height:80vh;
+    width: 100%;
+}
